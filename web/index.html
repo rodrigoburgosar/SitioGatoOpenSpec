@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre información fascinante sobre gatos, sus razas, consejos de cuidado y una hermosa galería.">
+    <title>Mundo de Gatos - Explora el Mundo Felino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">🐱 Mundo de Gatos</h1>
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo oscuro">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Alternar menú de navegación">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link">Inicio</a></li>
+                    <li><a href="#showcase" class="nav-link">Razas</a></li>
+                    <li><a href="#gallery" class="nav-link">Galería</a></li>
+                    <li><a href="#tips" class="nav-link">Consejos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h2>Bienvenido al Mundo Felino</h2>
+                <p>Descubre datos fascinantes, hermosas razas y consejos expertos de cuidado para tus compañeros peludos</p>
+                <a href="#showcase" class="cta-button">Explorar Razas</a>
+            </div>
+        </section>
+
+        <!-- Cat Showcase Section -->
+        <section class="showcase" id="showcase">
+            <h2 class="section-title">Razas de Gatos</h2>
+            <div id="breedsContainer" class="breed-cards">
+                <div class="loading">Cargando razas de gatos...</div>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section class="gallery" id="gallery">
+            <h2 class="section-title">Galería</h2>
+            <div id="galleryContainer" class="gallery-grid">
+                <div class="loading">Cargando imágenes de gatos...</div>
+            </div>
+        </section>
+
+        <!-- Gallery Modal -->
+        <div class="gallery-modal" id="galleryModal">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose" aria-label="Cerrar galería">&times;</button>
+                <button class="modal-prev" id="modalPrev" aria-label="Imagen anterior">&#10094;</button>
+                <img id="modalImage" src="" alt="Imagen de la galería" class="modal-image">
+                <figcaption id="modalCaption" class="modal-caption"></figcaption>
+                <button class="modal-next" id="modalNext" aria-label="Siguiente imagen">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Care Tips Section -->
+        <section class="tips" id="tips">
+            <h2 class="section-title">Consejos de Cuidado</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3>🥩 Nutrición</h3>
+                    <p>Alimenta a tu gato con comida de alta calidad rica en proteínas. Los gatos son carnívoros obligados y necesitan dietas basadas en carne con taurina para la salud del corazón y los ojos.</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>💪 Salud</h3>
+                    <p>Programa revisiones veterinarias regulares anualmente. Mantén las vacunas al día, cuida el peso saludable y observa señales de enfermedad.</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>🧼 Aseo</h3>
+                    <p>Cepilla a tu gato regularmente para evitar enredos y reducir la pérdida de pelo. Corta las uñas, limpia las orejas y considera el aseo profesional para razas de pelo largo.</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>🎮 Juego y Enriquecimiento</h3>
+                    <p>Proporciona juguetes, rascadores y juego interactivo. Los gatos necesitan estimulación mental y física para una vida saludable y feliz.</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>🏠 Ambiente</h3>
+                    <p>Crea un espacio seguro con escondites, ventanas para observar pájaros y áreas soleadas para dormir. Usa refuerzo positivo para entrenar comportamientos.</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>😸 Comportamiento y Socialización</h3>
+                    <p>Entiende el lenguaje corporal felino. Los gatitos socializados temprano tienden a ser más amistosos. Ten paciencia con gatos rescatados mientras se adaptan a sus nuevos hogares.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun Facts Section -->
+        <section class="fun-facts" id="fun-facts">
+            <h2 class="section-title">¿Sabías Que?</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <p>🐱 Los gatos pasan aproximadamente el 70% de sus vidas durmiendo o dormitando.</p>
+                </div>
+                <div class="fact-card">
+                    <p>👂 Los gatos tienen más de 20 músculos en cada oreja para una audición precisa.</p>
+                </div>
+                <div class="fact-card">
+                    <p>🌙 Los gatos pueden ver en la oscuridad 6 veces mejor que los humanos.</p>
+                </div>
+                <div class="fact-card">
+                    <p>💜 Los gatos tienen un tercer párpado llamado membrana nictitante.</p>
+                </div>
+                <div class="fact-card">
+                    <p>🦵 Los gatos tienen columnas vertebrales flexibles que les permiten rotar las orejas 180 grados.</p>
+                </div>
+                <div class="fact-card">
+                    <p>😸 El sonido de ronroneo solo se puede producir cuando la boca del gato está cerrada.</p>
+                </div>
+                <div class="fact-card">
+                    <p>🧬 Los gatos comparten el 95% de su ADN con los tigres.</p>
+                </div>
+                <div class="fact-card">
+                    <p>👣 Los gatos tienen huellas nasales únicas, como las huellas digitales humanas.</p>
+                </div>
+                <div class="fact-card">
+                    <p>🎵 Los gatos hacen más de 100 sonidos vocales, mientras que los perros hacen unos 10.</p>
+                </div>
+                <div class="fact-card">
+                    <p>⚡ La velocidad máxima de un gato es de aproximadamente 48 km/h.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Mundo de Gatos. Creado con ❤️ para amantes de los gatos en todas partes.</p>
+        <p>Adoptar salva vidas. Consulta tu refugio local: <a href="#">Encuentra un refugio cerca de ti</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
