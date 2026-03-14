@@ -1,5 +1,8 @@
-## ADDED Requirements
+# static-deployment Specification
 
+## Purpose
+TBD - created by archiving change cat-website. Update Purpose after archive.
+## Requirements
 ### Requirement: Deploy to GitHub Pages
 The website SHALL be deployable to GitHub Pages with minimal configuration.
 
@@ -57,3 +60,4 @@ The website SHALL be served over HTTPS.
 #### Scenario: Website is accessed securely
 - **WHEN** user accesses the website
 - **THEN** connection is HTTPS (GitHub Pages provides free SSL/TLS certificate)
+
